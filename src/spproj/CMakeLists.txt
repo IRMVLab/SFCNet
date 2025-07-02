@@ -1,0 +1,16 @@
+set(ALL_FILES spproj_ops.cc all.cc)
+if (SPCONV_BuildCUDA)
+    set(ALL_FILES ${ALL_FILES} spproj_ops.cu)
+endif()
+add_library(spproj SHARED ${ALL_FILES})
+
+target_include_directories(spproj PRIVATE ${ALL_INCLUDE})
+
+set_property(TARGET spproj PROPERTY CUDA_STANDARD 14)
+set_property(TARGET spproj PROPERTY CXX_STANDARD 14)
+set_target_properties(spproj PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
+if (SPCONV_BuildCUDA)
+    target_link_libraries(spproj PRIVATE ${ALL_LIBS} cuhash)
+else()
+    target_link_libraries(spproj PRIVATE ${ALL_LIBS})
+endif()

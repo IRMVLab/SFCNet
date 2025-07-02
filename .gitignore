@@ -112,5 +112,4 @@ __pycache__
 /cmake-build-debug/
 *.zip
 **/log*/*
-/WorkNote.md
 

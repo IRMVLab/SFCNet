@@ -1,0 +1,26 @@
+# basic
+ninja==1.11.1
+numpy==1.22.3
+
+# for training
+tensorboard==2.13.0
+torch==1.12.0.dev20220327+cu113
+torchaudio==0.12.0.dev20220327+cu113
+torchvision==0.13.0.dev20220327+cu113
+PyYAML==6.0
+scikit-image==0.19.2
+scikit-learn==1.0.2
+scipy==1.10.1
+tqdm==4.65.0
+wandb==0.13.3
+
+# spconv packages
+spconv-cu113==2.3.3
+cumm-cu113==0.4.10
+
+
+
+
+
+
+
