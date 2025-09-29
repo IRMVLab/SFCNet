@@ -12,7 +12,8 @@
       ·
     <strong>Hesheng Wang#</strong></p>
  <h5 align="left">TL;DR: We propose the spherical frustum structure to avoid quantized information loss in conventional 2D spherical projection for LiDAR point cloud semantic segmentation.</h5>
-
+ 
+[![neurips](https://img.shields.io/badge/NeurIPS-Proceedings-blue)](https://papers.nips.cc/paper_files/paper/2024/hash/dc9544b26ad3579477e567588db18cfc-Abstract-Conference.html)
 [![arxiv paper](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org/abs/2311.17491)
 
 ### :newspaper:News
@@ -112,12 +113,16 @@ python val_SemanticKITTI_nus.py --log_dir logs/log_nuscenes
 
 If you find our work useful, please cite us
 ```
-@inproceedings{
-    zheng2024spherical,
-    title={Spherical Frustum Sparse Convolution Network for LiDAR Point Cloud Semantic Segmentation},
-    author={Zheng, Yu and Wang, Guangming and Liu, Jiuming and Pollefeys, Marc and Wang, Hesheng},
-    booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
-    year={2024},
+@inproceedings{zheng2024spherical,
+ author = {Zheng, Yu and Wang, Guangming and Liu, Jiuming and Pollefeys, Marc and Wang, Hesheng},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {121827--121858},
+ publisher = {Curran Associates, Inc.},
+ title = {Spherical Frustum Sparse Convolution Network for LiDAR Point Cloud Semantic Segmentation},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/dc9544b26ad3579477e567588db18cfc-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024}
 }
 ```
 
@@ -134,4 +139,5 @@ If you find our work useful, please cite us
 ### :handshake:Acknowledgement
 
 Our model training and testing architecture is mainly built based on [RandLA-Net-pytorch](https://github.com/tsunghan-wu/RandLA-Net-pytorch). The spherical frustum library is built based on [spconv](https://github.com/traveller59/spconv/). Many thanks to these open-sourced projects.
+
 
